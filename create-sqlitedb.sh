@@ -8,6 +8,7 @@ docker build -t govnotebook -f govnotebook.dockerfile .
 docker run  --name govnb -d -v `pwd`:/home/jovyan/work govnotebook
 # run papermill notebook pipeline
 docker exec govnb papermill /home/jovyan/work/notebooks/CollateData.ipynb \
-	/home/jovyan/work/notebooks/CollateData-OUTPUT.ipynb
+	/home/jovyan/work/notebooks/CollateData-OUTPUT.ipynb \
+	 --log-output 
 # cleanup container
 docker container rm -fv govnb 
