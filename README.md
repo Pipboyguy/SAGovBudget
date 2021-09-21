@@ -35,7 +35,7 @@ docker-compose -f docker-compose-non-dev.yml up
 After some time, your should be able to open http://localhost:8088/ in your browser and be connected to apache superset. If you are prompted for a username and password, its just "**admin**".
 
 5. We need to import our SQLite database that we generated in the ETL process earlier.
-Go to  *Data -> Databases -> '+ Database'*. <br>Name your database `treasurydb` and fill the URI as`sqlite:////treasury-data/SAGovBudget.sqlite`<br><br>![connet-to-db-pic](assets/howto-connect-to-db.png?raw=true)
+Go to  *Data -> Databases -> '+ Database'*.<br>Choose SQLite as a database type, name your database `treasurydb` and fill the URI as`sqlite:////treasury-data/SAGovBudget.sqlite`<br><br>![connet-to-db-pic](assets/howto-connect-to-db.png?raw=true)
 <br><br>Test your connection. If successful, press *Connect*.
 :sunglasses:**Daaashboading time!!**:sunglasses:
 
