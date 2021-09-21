@@ -22,7 +22,7 @@ git clone --recurse-submodules https://github.com/Pipboyguy/SAGovBudget.git
 #### Download the data and run ETL
 3. In the project's root folder, run:
 ```shell
-sh create-sqlite.sh
+sh create-sqlitedb.sh
 ```
 this will download the needed images, and run the ETL notebook found in `notebooks/CollateData.ipynb`. You can view the output and logs of this notebook by opening up `notebooks/CollateData-OUTPUT.ipynb` with a jupyter notebook viewer.
 
