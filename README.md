@@ -12,8 +12,9 @@ This code should work on most operating systems. Do note that certain steps requ
 
 ### Steps:
 #### Get the code
-1. Make sure you have Docker and Git installed on your computer.
-2. Clone this repository **along with the submodules** by running:
+1. Make sure you have Docker and Git installed on your computer. Because apache superset has heavy resource requirements, make sure you have at least 8GB of RAM to the virtual machine like so:<br><bt>![](assets/docker-resources.png)
+
+3. Clone this repository **along with the submodules** by running:
 ```shell
 git clone --recurse-submodules https://github.com/Pipboyguy/SAGovBudget.git
 ```
