@@ -39,7 +39,7 @@ Go to  *Data -> Databases -> '+ Database'*.<br>Choose SQLite as a database type,
 <br><br>Test your connection. If successful, press *Connect*.
 :sunglasses:**Daaashboading time!!**:sunglasses:
 
-6. You can either build your own dashboard from here, or import the starter dashboard located in `src/visualization/treasury-dashboard-starter.json`.<br><br>To Import the dashboard, in superset navigate to *Settings -> Import dashboards*. From here, choose `treasury-dashboard-starter.json` and your database as *treasurydb*:<br><br>![import-dashboard](assets/import-dashboard-pic.png?raw=true).<br><br>You should find the started dashboard at *Dashboards* Tab.
+6. You can either build your own dashboard from here, or import the starter dashboard located in `src/visualization/treasury-dashboard-starter.json`.<br><br>To Import the dashboard, in superset navigate to *Settings -> Import dashboards*. From here, choose `treasury-dashboard-starter.json` and your database as *treasurydb*:<br><br>![import-dashboard](assets/import-dashboard-pic.png?raw=true).<br><br>You should find the started dashboard at *Dashboards* Tab. Note that if you get a timeour error, just try refreshing your browser. SQLite can be finicky, and the plan is to migrate the codebase to Postgres in future.
 
 Finally, you should be off to the races! :horse:
 
