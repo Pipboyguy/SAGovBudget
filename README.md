@@ -52,9 +52,7 @@ Feel free to fork and contribute!!
 ## Some Notes
 
 ### Modifications to Apache Superset
-Apache Superset users SQLite database. Since they plan on dropping support for SQLite, a temporary workaround is to set the flag `PREVENT_UNSAFE_DB_CONNECTIONS = False` (https://github.com/apache/superset/issues/9748) by editing `superset_config.py`
-
-
+Superset plans on dropping support for SQLite, a temporary workaround is to set the flag `PREVENT_UNSAFE_DB_CONNECTIONS = False` (https://github.com/apache/superset/issues/9748) by editing `superset_config.py`
 
 This is why there is a submodule in this repo, to apply these amendments. The submodule already contains
 these amendments.
