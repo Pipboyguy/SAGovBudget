@@ -12,7 +12,7 @@ This code should work on most operating systems. Do note that certain steps requ
 
 ### Steps:
 #### Get the code
-1. Make sure you have Docker and Git installed on your computer. Because apache superset has heavy resource requirements, make sure you have at least 8GB of RAM to the virtual machine like so:<br><bt>![](assets/docker-resources.png?raw=true)
+1. Make sure you have Docker and Git installed on your computer. Because apache superset has heavy resource requirements, make sure you have at least 8GB of RAM to the virtual machine like so:<br><bt>![ =100x20](assets/docker-resources.png?raw=true)
 
 3. Clone this repository **along with the submodules** by running:
 ```shell
