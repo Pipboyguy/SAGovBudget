@@ -1,0 +1,912 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "css": "",
+                "dashboard_title": "SA National Treasury Dashboard",
+                "description": null,
+                "json_metadata": "{\"timed_refresh_immune_slices\": [], \"expanded_slices\": {}, \"refresh_frequency\": 0, \"default_filters\": \"{}\", \"color_scheme\": null, \"remote_id\": 1}",
+                "position_json": "{\"CHART-PqtpYCSiP2\":{\"children\":[],\"id\":\"CHART-PqtpYCSiP2\",\"meta\":{\"chartId\":2,\"height\":50,\"sliceName\":\"Programme Vote Count\",\"uuid\":\"5a15800c-1efd-45e6-b8e4-1a3edeb0cb5e\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-yphhIp3HAK\"],\"type\":\"CHART\"},\"CHART-oHwHtkQyd0\":{\"children\":[],\"id\":\"CHART-oHwHtkQyd0\",\"meta\":{\"chartId\":1,\"height\":50,\"sliceName\":\"Budget by Department\",\"uuid\":\"3e4303dc-1d27-4c43-bff1-75275eb108b3\",\"width\":4},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-yphhIp3HAK\"],\"type\":\"CHART\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"DIVIDER-21xVKiNhBO\":{\"children\":[],\"id\":\"DIVIDER-21xVKiNhBO\",\"meta\":{},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"DIVIDER\"},\"GRID_ID\":{\"children\":[\"HEADER-gcvsosLAqD\",\"ROW-yphhIp3HAK\",\"DIVIDER-21xVKiNhBO\",\"TABS-x8nTMwM0WN\"],\"id\":\"GRID_ID\",\"parents\":[\"ROOT_ID\"],\"type\":\"GRID\"},\"HEADER-gcvsosLAqD\":{\"children\":[],\"id\":\"HEADER-gcvsosLAqD\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"headerSize\":\"MEDIUM_HEADER\",\"text\":\"Budget Overview\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"HEADER\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"SA National Treasury Dashboard\"},\"type\":\"HEADER\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-yphhIp3HAK\":{\"children\":[\"CHART-oHwHtkQyd0\",\"CHART-PqtpYCSiP2\"],\"id\":\"ROW-yphhIp3HAK\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"TAB-COICZCdW15\":{\"children\":[],\"id\":\"TAB-COICZCdW15\",\"meta\":{\"defaultText\":\"Tab title\",\"placeholder\":\"Tab title\",\"text\":\"Budget\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-x8nTMwM0WN\"],\"type\":\"TAB\"},\"TAB-CxPR-Jj_i\":{\"children\":[],\"id\":\"TAB-CxPR-Jj_i\",\"meta\":{\"defaultText\":\"Tab title\",\"placeholder\":\"Tab title\",\"text\":\"Department\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-x8nTMwM0WN\"],\"type\":\"TAB\"},\"TABS-x8nTMwM0WN\":{\"children\":[\"TAB-COICZCdW15\",\"TAB-CxPR-Jj_i\"],\"id\":\"TABS-x8nTMwM0WN\",\"meta\":{},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"TABS\"}}",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "main.National",
+                            "datasource_type": "table",
+                            "id": 1,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"HAVING\", \"comparator\": null, \"expressionType\": \"SQL\", \"filterOptionName\": \"filter_bgzq225cn3d_3vbttzsihh6\", \"isExtra\": false, \"isNew\": false, \"operator\": null, \"sqlExpression\": \"SUM(BUDGET) > 100000000\", \"subject\": null}], \"bottom_margin\": \"auto\", \"color_scheme\": \"bnbColors\", \"columns\": [], \"datasource\": \"1__table\", \"extra_form_data\": {}, \"groupby\": [\"DEPARTMENT\"], \"label_colors\": {}, \"metrics\": [{\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"BUDGET\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 15, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"REAL\", \"type_generic\": 0, \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"SUM(BUDGET)\", \"optionName\": \"metric_7mm4udmlxuo_4xzogwwyf34\", \"sqlExpression\": null}], \"order_desc\": true, \"row_limit\": 50000, \"show_legend\": false, \"slice_id\": 1, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"dist_bar\", \"x_ticks_layout\": \"auto\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 1, \"datasource_name\": \"National\", \"schema\": \"main\", \"database_name\": \"treasurydb\"}",
+                            "query_context": "{\"datasource\":{\"id\":1,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"filters\":[],\"extras\":{\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"(SUM(BUDGET) > 100000000)\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[\"DEPARTMENT\"],\"metrics\":[{\"aggregate\":\"SUM\",\"column\":{\"column_name\":\"BUDGET\",\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"id\":15,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"REAL\",\"type_generic\":0,\"verbose_name\":null},\"expressionType\":\"SIMPLE\",\"hasCustomLabel\":false,\"isNew\":false,\"label\":\"SUM(BUDGET)\",\"optionName\":\"metric_7mm4udmlxuo_4xzogwwyf34\",\"sqlExpression\":null}],\"annotation_layers\":[],\"row_limit\":50000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "Budget by Department",
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "main.National",
+                            "datasource_type": "table",
+                            "id": 2,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"HAVING\", \"comparator\": null, \"expressionType\": \"SQL\", \"filterOptionName\": \"filter_6oi6rnwzoq7_6segdrizs3d\", \"isExtra\": false, \"isNew\": false, \"operator\": null, \"sqlExpression\": \"count(VOTE_NO) > 50000 \", \"subject\": null}], \"color_scheme\": \"bnbColors\", \"datasource\": \"1__table\", \"date_format\": \"smart_date\", \"donut\": true, \"extra_form_data\": {}, \"groupby\": [\"PROGRAMME\"], \"innerRadius\": 18, \"label_line\": true, \"label_type\": \"key_value\", \"labels_outside\": true, \"legendOrientation\": \"top\", \"legendType\": \"scroll\", \"metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"VOTE_NO\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 1, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"REAL\", \"type_generic\": 0, \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"COUNT(VOTE_NO)\", \"optionName\": \"metric_2k8hww8tapp_k701bmo3lua\", \"sqlExpression\": null}, \"number_format\": \"SMART_NUMBER\", \"outerRadius\": 33, \"row_limit\": 5000, \"show_labels\": true, \"show_labels_threshold\": 1, \"show_legend\": false, \"sort_by_metric\": true, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"pie\", \"remote_id\": 2, \"datasource_name\": \"National\", \"schema\": \"main\", \"database_name\": \"treasurydb\"}",
+                            "query_context": "{\"datasource\":{\"id\":1,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"filters\":[],\"extras\":{\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"(count(VOTE_NO) > 50000 )\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[\"PROGRAMME\"],\"metrics\":[{\"expressionType\":\"SIMPLE\",\"column\":{\"id\":1,\"column_name\":\"VOTE_NO\",\"verbose_name\":null,\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"is_dttm\":false,\"type\":\"REAL\",\"type_generic\":0,\"python_date_format\":null},\"aggregate\":\"COUNT\",\"sqlExpression\":null,\"isNew\":false,\"hasCustomLabel\":false,\"label\":\"COUNT(VOTE_NO)\",\"optionName\":\"metric_2k8hww8tapp_k701bmo3lua\"}],\"orderby\":[[{\"expressionType\":\"SIMPLE\",\"column\":{\"id\":1,\"column_name\":\"VOTE_NO\",\"verbose_name\":null,\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"is_dttm\":false,\"type\":\"REAL\",\"type_generic\":0,\"python_date_format\":null},\"aggregate\":\"COUNT\",\"sqlExpression\":null,\"isNew\":false,\"hasCustomLabel\":false,\"label\":\"COUNT(VOTE_NO)\",\"optionName\":\"metric_2k8hww8tapp_k701bmo3lua\"},false]],\"annotation_layers\":[],\"row_limit\":5000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "Programme Vote Count",
+                            "viz_type": "pie"
+                        }
+                    }
+                ],
+                "slug": null
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "VOTE_NO",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 1,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "ef2c2e00-7d95-4c86-9232-c689b5ad277f",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "DEPARTMENT",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 2,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "953ca006-352a-4fbb-8279-c8d9cf3657b3",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "PROGRAMME_NO",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 3,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "574bb38d-f809-4e57-a951-710aba654dfe",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "PROGRAMME",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 4,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "ea900893-e31c-4841-82d4-48a001b38653",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "SUBPROGRAMME_NO",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 5,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "ef833587-dcd3-430e-b2d7-5cfa1fe2ef79",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "SUBPROGRAMME",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 6,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "92d0a151-fc37-453e-9c5c-2b9e826159ed",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "ECONCLASS_L1",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 7,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "bbdc254e-fc28-4dc7-ac29-0d36bed3112d",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "ECONCLASS_L2",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 8,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "b9aade24-6748-4267-ba8a-fda11eac889e",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "ECONCLASS_L3",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 9,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "9da3180a-98e1-4921-8b5d-beee806d7fea",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "ECONCLASS_L4",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 10,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "50fe390e-e106-4a0a-bc87-6cebed8fc525",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "ECONCLASS_L5",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 11,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "468c3dcb-7d9c-462a-8cbb-a6b68b237771",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "IYM_ECONLOWESTLEVEL",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 12,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "5182221a-d581-46bc-82e0-3e820658a1eb",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "ITEM_LOWEST_LEVEL",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 13,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "24e37ae4-efc9-4915-939c-a672c7f67fb7",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "FUND_LEVEL_1",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 14,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "02f03b8b-9088-4bdc-b372-fdc08c5fa770",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "BUDGET",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 15,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "13dd7d60-a566-43b5-822c-5cbed8da1a98",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "ADJUSTMENTBUDGET",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 16,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "2781a56c-b123-4f67-88c3-dfd82293e27d",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "APRIL",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 17,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "cfc9d8e0-9152-4f47-8c03-ec0a8ec93ae4",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "MAY",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 18,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "247da06c-9616-4c1f-98ba-56c2a1dd6190",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "JUNE",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 19,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "41656add-3933-4d61-876d-4a272e4b6500",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "JULY",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 20,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "2736c396-9c61-4243-9b11-98353d794514",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "AUGUST",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 21,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "2f93b9ae-1a53-4595-84b7-11bcfa2889e1",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "SEPTEMBER",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 22,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "0f3a73d5-0748-4a62-a052-89e7b34cbc3d",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "OCTOBER",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 23,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "ace66937-b0d8-49ac-bb31-d2a501ea467b",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "NOVEMBER",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 24,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "56ee25eb-545a-4aa3-9bc3-f74d3dfa1c42",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "DECEMBER",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 25,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "c104304d-af46-4361-b5c6-78de0e04b984",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "JANUARY",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 26,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "7c09d608-4d70-4cd9-bc4a-a51a7a876232",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "FEBRUARY",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 27,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "bdb0c88c-43a5-4820-b7e9-f97fdcbaf37e",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "MARCH",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 28,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "6880e429-4290-4a91-90da-977dd7d37644",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "Q1",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 29,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "8bf129b5-5403-4acc-a154-3bbe0ea6a3be",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "Q2",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 30,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "cb5aef23-5b25-4de3-8e74-fcb507fb650a",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "Q3",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 31,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "68e7f4f2-db7d-4270-85e1-709db7866c47",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "Q4",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 32,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "REAL",
+                            "uuid": "8bbc029a-70ca-4ddd-8072-5b6cb2021de0",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "column_name": "FINANCIAL_YEAR",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 33,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TEXT",
+                            "uuid": "7520855f-65db-489d-ab02-25505fb2de98",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 2,
+                "default_endpoint": null,
+                "description": null,
+                "extra": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": null,
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-09-21T13:39:05"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "extra": null,
+                            "id": 1,
+                            "metric_name": "count",
+                            "metric_type": "count",
+                            "table_id": 1,
+                            "uuid": "b2315374-7f13-4945-9e80-d873713cfd9c",
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 1, \"database_name\": \"treasurydb\"}",
+                "schema": "main",
+                "sql": null,
+                "table_name": "National",
+                "template_params": null
+            }
+        }
+    ]
+}
