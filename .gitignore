@@ -161,3 +161,4 @@ data/raw/*
 
 # notebook OUTPUT files
 notebooks/*-OUTPUT.ipynb
+*OUTPUT.ipynb

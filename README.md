@@ -25,6 +25,7 @@ git clone --recurse-submodules https://github.com/Pipboyguy/SAGovBudget.git
 sh create-sqlitedb.sh
 ```
 this will download the needed images, and run the ETL notebook found in `notebooks/CollateData.ipynb`. You can view the output and logs of this notebook by opening up `notebooks/CollateData-OUTPUT.ipynb` with a jupyter notebook viewer.
+Please note that this can take up to 15 Minutes to download all files, extract the CSV files, and convert to a SQLite database, depending on your internet speed.
 
 #### Spin up superset dashboard
 4. Navigate to the `superset/` folder and run:
