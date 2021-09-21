@@ -4,7 +4,7 @@
 
 A dashboard based on SA government's expenditure, as reported by the [national treasury](http://www.treasury.gov.za/statistics/Quarterly%20spending%20data/2020/), all built with open source software with permissive licenses.
 
-![dashboard-pic](assets/dashboard-pic.png)
+![dashboard-pic](assets/dashboard-pic.png?raw=true)
 
 ## Setup
 
@@ -12,7 +12,7 @@ This code should work on most operating systems. Do note that certain steps requ
 
 ### Steps:
 #### Get the code
-1. Make sure you have Docker and Git installed on your computer. Because apache superset has heavy resource requirements, make sure you have at least 8GB of RAM to the virtual machine like so:<br><bt>![](assets/docker-resources.png)
+1. Make sure you have Docker and Git installed on your computer. Because apache superset has heavy resource requirements, make sure you have at least 8GB of RAM to the virtual machine like so:<br><bt>![](assets/docker-resources.png?raw=true)
 
 3. Clone this repository **along with the submodules** by running:
 ```shell
@@ -34,11 +34,11 @@ docker-compose -f docker-compose-non-dev.yml up
 After some time, your should be able to open http://localhost:8088/ in your browser and be connected to apache superset. If you are prompted for a username and password, its just "**admin**".
 
 5. We need to import our SQLite database that we generated in the ETL process earlier.
-Go to  *Data -> Databases -> '+ Database'*. <br>Name your database `treasurydb` and fill the URI as`sqlite:////treasury-data/SAGovBudget.sqlite`<br><br>![connet-to-db-pic](assets/howto-connect-to-db.png)
+Go to  *Data -> Databases -> '+ Database'*. <br>Name your database `treasurydb` and fill the URI as`sqlite:////treasury-data/SAGovBudget.sqlite`<br><br>![connet-to-db-pic](assets/howto-connect-to-db.png?raw=true)
 <br><br>Test your connection. If successful, press *Connect*.
 :sunglasses:**Daaashboading time!!**:sunglasses:
 
-6. You can either build your own corrupt dashboard from here, or import the starter dashboard located in `src/visualization/treasury-dashboard-starter.json`.<br><br>To Import the dashboard, in superset navigate to *Settings -> Import dashboards*. From here, choose `treasury-dashboard-starter.json` and your database as *treasurydb*:<br><br>![import-dashboard](assets/import-dashboard-pic.png).<br><br>You should find the started dashboard at *Dashboards* Tab.
+6. You can either build your own corrupt dashboard from here, or import the starter dashboard located in `src/visualization/treasury-dashboard-starter.json`.<br><br>To Import the dashboard, in superset navigate to *Settings -> Import dashboards*. From here, choose `treasury-dashboard-starter.json` and your database as *treasurydb*:<br><br>![import-dashboard](assets/import-dashboard-pic.png?raw=true).<br><br>You should find the started dashboard at *Dashboards* Tab.
 
 Finally, you should be off to the races! :horse:
 
